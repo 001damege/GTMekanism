@@ -11,7 +11,6 @@ import com.gtm.common.data.GTMCreativeTab;
 import com.gtm.common.data.GTMItems;
 import com.gtm.common.data.GTMMaterials;
 import com.gtm.common.data.GTMRecipeTypes;
-import com.gtm.common.data.machines.GTMMachines;
 import com.gtm.common.data.machines.GTMMultiblockMachines;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -69,6 +68,5 @@ public class GTMekanism {
     @SubscribeEvent
     public void registerMachines(GTCEuAPI.RegisterEvent<ResourceLocation, MachineDefinition> event) {
         GTMMultiblockMachines.init();
-        GTMMachines.init();
     }
 }
